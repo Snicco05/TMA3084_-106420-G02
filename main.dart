@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main(){
-    bool continueOrder = true;
+    bool OrderRequest = true;
 
-    while(continueOrder){
+    while(OrderRequest){
         print("Pizza Price: \"Small= 5 USD, Medium= 7 USD, Large=10 USD\"\n");
 
         print("Please enter your pizza size (small, medium, or large): ");
@@ -39,7 +39,7 @@ void main(){
         String? orderAnswer = stdin.readLineSync()!.toLowerCase();
 
         if(orderAnswer != "yes"){
-            continueOrder = false;
+            OrderRequest = false;
             print("Thank You for your order!");
         }
     }
